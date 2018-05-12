@@ -1,0 +1,15 @@
+<manifest>
+  <remote name="git.yoctoproject.org" fetch="git://git.yoctoproject.org" />
+  <default revision="refs/heads/rocko" remote="git.yoctoproject.org" sync-j="4" />
+  <project name="poky" remote="git.yoctoproject.org" path="poky" />
+
+  <remote name="github" fetch="https://github.com" />
+  <default revision="refs/heads/rocko" remote="github" sync-j="4" />
+
+  <project name="openembedded/meta-openembedded" remote="github" path="meta-openembedded" />
+  <remote name="imyller/meta-nodejs" remote="github" path="meta-nodejs" />
+  <remote name="madisongh/meta-golang" remote="github" path="meta-golang" />
+  <remote name="thecubic/meta-intel-iot-middleware" remote="github" path="meta-intel-iot-middleware" />
+  <remote name="thecubic/meta-intel-edison-bsp" remote="github" path="meta-intel-edison-bsp" />
+  <remote name="thecubic/meta-intel-edison-distro" remote="github" path="meta-intel-edison-distro" />
+</manifest>
