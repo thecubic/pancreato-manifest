@@ -10,17 +10,19 @@ if [ ! -d "${topdir}" ]; then
   echo "usage: $0 <topdir>" >/dev/stderr
   exit 1
 fi
+abstopdir=$(/bin/realpath ${topdir})
+
 
 # this script should be two levels down from the root
 projectroot=$(/bin/realpath ${relpath}/../../)
 
 
 if [ ! -f "${topdir}/.pancreato" ]; then
-  echo "defining new build in ${topdir}"
+  echo "defining new build in ${abstopdir}"
   /bin/mkdir -p ${topdir}/conf
   /bin/mkdir -p ${projectroot}/bbcache{-sstate,-downloads}
   /bin/cat > ${topdir}/init.sh <<EOINIT
-source ${projectroot}/poky/oe-init-build-env ${topdir}
+source ${projectroot}/poky/oe-init-build-env ${abstopdir}
 EOINIT
 
   /bin/cat > ${topdir}/conf/local.conf <<EOLOCAL
@@ -110,7 +112,7 @@ BBLAYERS ?= " \\
   ${projectroot}/meta-nodejs \\
   ${projectroot}/meta-intel-edison-distro \\
   ${projectroot}/meta-intel-edison-bsp \\
-  ${projectroot}/meta-intel-edison-iot-middleware \\
+  ${projectroot}/meta-intel-iot-middleware \\
   "
 EOBBLAYERS
 
