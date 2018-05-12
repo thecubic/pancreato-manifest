@@ -9,6 +9,6 @@
   <project name="imyller/meta-nodejs" path="meta-nodejs" />
   <project name="madisongh/meta-golang" path="meta-golang" />
   <project name="thecubic/meta-intel-iot-middleware" path="meta-intel-iot-middleware" />
-  <remote name="thecubic/meta-intel-edison-bsp" path="meta-intel-edison-bsp" />
-  <remote name="thecubic/meta-intel-edison-distro" path="meta-intel-edison-distro" />
+  <project name="thecubic/meta-intel-edison-bsp" path="meta-intel-edison-bsp" />
+  <project name="thecubic/meta-intel-edison-distro" path="meta-intel-edison-distro" />
 </manifest>
