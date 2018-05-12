@@ -1,14 +1,63 @@
 <manifest>
-  <default revision="refs/heads/rocko" remote="github" sync-j="4" />
+  <default
+    revision="refs/heads/rocko"
+    remote="github"
+    sync-j="4" />
 
-  <remote name="git.yoctoproject.org" fetch="git://git.yoctoproject.org" />
-  <project name="poky" remote="git.yoctoproject.org" path="poky" />
+  <remote
+    name="openembedded"
+    fetch="git://git.openembedded.org" />
+  <project
+    name="openembedded-core"
+    remote="openembedded"
+    path="openembedded-core" />
+  <project
+    name="meta-openembedded"
+    remote="openembedded"
+    path="meta-openembedded" />
 
-  <remote name="github" fetch="https://github.com" />
-  <project name="openembedded/meta-openembedded" path="meta-openembedded" />
-  <project name="imyller/meta-nodejs" revision="refs/heads/master" path="meta-nodejs" />
-  <project name="madisongh/meta-golang" revision="refs/heads/master" path="meta-golang" />
-  <project name="thecubic/meta-intel-iot-middleware" path="meta-intel-iot-middleware" />
-  <project name="thecubic/meta-intel-edison-bsp" path="meta-intel-edison-bsp" />
-  <project name="thecubic/meta-intel-edison-distro" path="meta-intel-edison-distro" />
+  <remote
+    name="yoctoproject"
+    fetch="git://git.yoctoproject.org" />
+  <project
+    name="poky"
+    remote="yoctoproject"
+    path="poky" />
+  <remote
+    name="github"
+    fetch="https://github.com" />
+  <project
+    name="imyller/meta-nodejs"
+    revision="refs/heads/master"
+    path="meta-nodejs" />
+  <project
+    name="madisongh/meta-golang"
+    revision="refs/heads/master"
+    path="meta-golang" />
+
+  <!-- support for Intel Edison -->
+  <project
+    name="thecubic/meta-intel-iot-middleware"
+    path="meta-intel-iot-middleware" />
+  <project
+    name="thecubic/meta-intel-edison-bsp"
+    path="meta-intel-edison-bsp" />
+  <project
+    name="thecubic/meta-intel-edison-distro"
+    path="meta-intel-edison-distro" />
+
+  <!-- support for Freescale (e.g. i.MX7) -->
+  <project
+    name="meta-freescale"
+    remote="yoctoproject"
+    path="meta-freescale" />
+  <project
+    name="Freescale/meta-freescale-distro"
+    path="meta-freescale-distro" />
+
+  <!-- support for Raspberry Pi -->
+  <project
+    name="meta-raspberrypi"
+    remote="yoctoproject"
+    path="meta-raspberrypi" />
 </manifest>
