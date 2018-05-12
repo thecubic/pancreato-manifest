@@ -34,6 +34,12 @@
     name="madisongh/meta-golang"
     path="meta-golang" />
 
+  <!-- pancreato manifest & build configuration -->
+  <project
+    name="thecubic/pancreato-manifest"
+    path="pancreato-manifest" />
+
+
   <!-- support for Intel Edison -->
   <project
     name="thecubic/meta-intel-iot-middleware"
