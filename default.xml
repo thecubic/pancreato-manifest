@@ -6,8 +6,8 @@
 
   <remote name="github" fetch="https://github.com" />
   <project name="openembedded/meta-openembedded" path="meta-openembedded" />
-  <project name="imyller/meta-nodejs" path="meta-nodejs" />
-  <project name="madisongh/meta-golang" path="meta-golang" />
+  <project name="imyller/meta-nodejs" revision="refs/heads/master" path="meta-nodejs" />
+  <project name="madisongh/meta-golang" revision="refs/heads/master" path="meta-golang" />
   <project name="thecubic/meta-intel-iot-middleware" path="meta-intel-iot-middleware" />
   <project name="thecubic/meta-intel-edison-bsp" path="meta-intel-edison-bsp" />
   <project name="thecubic/meta-intel-edison-distro" path="meta-intel-edison-distro" />
