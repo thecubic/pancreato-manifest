@@ -1,6 +1,6 @@
 <manifest>
   <default
-    revision="refs/heads/rocko"
+    revision="refs/heads/sumo"
     remote="github"
     sync-j="4" />
 
