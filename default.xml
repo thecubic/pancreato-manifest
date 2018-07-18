@@ -32,6 +32,7 @@
     path="meta-nodejs" />
   <project
     name="madisongh/meta-golang"
+    revision="refs/heads/rocko"
     path="meta-golang" />
 
   <!-- pancreato manifest & build configuration -->
@@ -42,14 +43,9 @@
 
   <!-- support for Intel Edison -->
   <project
-    name="thecubic/meta-intel-iot-middleware"
-    path="meta-intel-iot-middleware" />
-  <project
-    name="thecubic/meta-intel-edison-bsp"
-    path="meta-intel-edison-bsp" />
-  <project
-    name="thecubic/meta-intel-edison-distro"
-    path="meta-intel-edison-distro" />
+    name="edison-fw/meta-intel-edison"
+    revision="refs/heads/sumo64-acpi"
+    path="meta-intel-edison" />
 
   <!-- support for Freescale (e.g. i.MX7) -->
   <project
