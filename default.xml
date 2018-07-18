@@ -43,9 +43,17 @@
 
   <!-- support for Intel Edison -->
   <project
+    name="meta-intel"
+    remote="yoctoproject"
+    path="meta-intel" />
+  <project
     name="edison-fw/meta-intel-edison"
     revision="refs/heads/sumo64-acpi"
     path="meta-intel-edison" />
+  <project
+    name="edison-fw/meta-acpi"
+    revision="refs/heads/eds"
+    path="meta-acpi" />
 
   <!-- support for Freescale (e.g. i.MX7) -->
   <project
